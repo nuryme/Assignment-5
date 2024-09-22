@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#111111',
+                        body: 'rgba(17, 17, 17, 0.7)',
+                        btnbg: 'rgba(17, 17, 17, 0.05)',
+                        menubg: '#F9F7F3',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <header class="fixed top-0 right-0 w-full bg-white">
+            <div class="px-32 py-6 bg-menubg flex justify-between items-center">
+                <a href="blog.html" class="btn border-none primaryText bg-primary px-8 py-3">Blog</a>
+                <div class="flex items-center gap-4">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="primaryText font-Lexend text-secondary">Donate Bangladesh</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="assets/coin.png" alt="">
+                    <h2 class="tkText text-body">
+                        <span>5500</span>
+                        BDT</h2>
+                </div>
+            </div>
+    
+            <div class="space-x-4 text-center mt-10">
+                <button class="btn border-none primaryText bg-primary px-8 py-4 ">Donation</button>
+                <button class="btn border-none primaryText bg-whtie border border-body px-8 py-4 ">History</button>
+            </div>
+        </header>
+    
+    </header>
+
+    <main class="px-32 py-8 space-y-6 mt-[250px]">
+        <h1 class="text-5xl font-bold mb-10">Important FAQ</h1>
+        <div class="space-y-4">
+            <div class="collapse collapse-arrow bg-white border border-gray-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        structure of a webpage as a tree of objects, where each element (like headings, paragraphs,
+                        etc.) is
+                        a node. This allows scripts to dynamically access and manipulate the content, structure, and
+                        style
+                        of the page.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border border-gray-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>
+                        You can select an element from the DOM using JavaScript with these common methods:
+
+                        document.getElementById('id') – Selects by ID.
+                        document.getElementsByClassName('class') – Selects by class.
+                        document.getElementsByTagName('tag') – Selects by tag.
+                        document.querySelector('selector') – Selects the first match using CSS selectors.
+                        document.querySelectorAll('selector') – Selects all matches using CSS selectors.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border border-gray-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why
+                    is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique where a single event listener is added to a parent element to
+                        handle
+                        events from its child elements. It works by utilizing event bubbling, allowing you to capture
+                        events
+                        as they propagate up the DOM tree.
+
+                        Benefits:
+
+                        Improves performance by reducing the number of event listeners.
+                        Handles dynamic content easily, as new child elements automatically inherit the parent’s event
+                        listener</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border border-gray-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>
+                        To manipulate an element's attributes and styles in the DOM:
+
+                        Attributes:
+                        Get: element.getAttribute('attribute')
+                        Set: element.setAttribute('attribute', 'value')
+                        Remove: element.removeAttribute('attribute')
+                        Styles:
+                        Set Style: element.style.property = 'value'
+                        Example: element.style.backgroundColor = 'blue'
+                        Add/Remove Classes: element.classList.add('class'), element.classList.remove('class')</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

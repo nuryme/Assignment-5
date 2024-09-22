@@ -1,0 +1,22 @@
+.primaryText {
+    font-size: 20px;
+    font-weight: 600;
+}
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.bodyText {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.tkText {
+    font-size: 20px;
+    font-weight: 500;
+}
+.tkText2 {
+    font-size: 16px;
+    font-weight: 400px;
+}
