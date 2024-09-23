@@ -72,7 +72,7 @@
                         <input id="noakhali-input" type="text"
                             class="rounded-lg border border-btnbg outline-primary bodyText p-4"
                             placeholder="Write Donation Amount">
-                        <button onclick="my_modal_1.showModal()" id="noakhali-btn" class="btn border-none primaryText bg-primary px-8 py-4 ">Donate
+                        <button id="noakhali-btn" class="btn border-none primaryText bg-primary px-8 py-4 ">Donate
                             Now</button>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                         <input id="feni-input" type="text"
                             class="rounded-lg border border-btnbg outline-primary bodyText p-4"
                             placeholder="Write Donation Amount">
-                        <button onclick="my_modal_1.showModal()" id="feni-btn" class="btn border-none primaryText bg-primary px-8 py-4 ">Donate
+                        <button id="feni-btn" class="btn border-none primaryText bg-primary px-8 py-4 ">Donate
                             Now</button>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <input id="quota-input" type="text"
                             class="rounded-lg border border-btnbg outline-primary bodyText p-4"
                             placeholder="Write Donation Amount">
-                        <button onclick="my_modal_1.showModal()" id="quota-btn" class="btn border-none primaryText bg-primary px-8 py-4">Donate
+                        <button id="quota-btn" class="btn border-none primaryText bg-primary px-8 py-4">Donate
                             Now</button>
                     </div>
                 </div>
@@ -136,23 +136,21 @@
         </section>
 
         <!-- modal -->
-        <div>
-            <!-- Open the modal using ID.showModal() method -->
-            <dialog id="my_modal_1" class="modal">
-                <div class="modal-box text-center">
-                    <h3 class="text-4xl mb-4 font-bold">Congrats!</h3>
-                    <img src="assets/coin.png" alt="" class="m-auto">
-                    <p class="py-4 capitalize">You have donated for humankind</p>
-                    <h4 class="text-lg font-bold">Successfully</h4>
-                    <div class="modal-action flex items-center">
-                        <form method="dialog" class="flex items-center">
-                            <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn m-auto" id="close-btn">Close Confirmation</button>
-                        </form>
-                    </div>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box text-center">
+                <h3 class="text-4xl mb-4 font-bold">Congrats!</h3>
+                <img src="assets/coin.png" alt="" class="m-auto">
+                <p class="py-4 capitalize">You have donated for humankind</p>
+                <h4 class="text-lg font-bold">Successfully</h4>
+                <div class="modal-action flex items-center">
+                    <form method="dialog" class="flex items-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn m-auto" id="close-btn">Close Confirmation</button>
+                    </form>
                 </div>
-            </dialog>
-        </div>
+            </div>
+        </dialog>
     </main>
 
     <footer></footer>

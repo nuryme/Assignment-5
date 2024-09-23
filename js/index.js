@@ -25,6 +25,10 @@ document.getElementById('noakhali-btn').addEventListener('click', function () {
         `
         historyContent.insertBefore(div, historyContent.firstChild);
 
+        //modal
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
+
         return remaining
     }
     else {
@@ -57,6 +61,10 @@ document.getElementById('feni-btn').addEventListener('click', function () {
         `
         historyContent.insertBefore(div, historyContent.firstChild);
 
+        //modal
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
+
         return remaining;
     }
     else {
@@ -88,6 +96,10 @@ document.getElementById('quota-btn').addEventListener('click', function () {
         <p class="text-base font-light">Date: ${new Date().toLocaleDateString()}</p>
         `
         historyContent.insertBefore(div, historyContent.firstChild);
+        
+        //modal
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
 
         return remaining;
     }
@@ -97,13 +109,13 @@ document.getElementById('quota-btn').addEventListener('click', function () {
 })
 
 //history button
-document.getElementById('history-btn').addEventListener('click', function() {
+document.getElementById('history-btn').addEventListener('click', function () {
     toggle('history-container');
     togglebg('history-btn', 'donation-btn')
 })
 
 //donate button
-document.getElementById('donation-btn').addEventListener('click', function() {
+document.getElementById('donation-btn').addEventListener('click', function () {
     toggle('donate-section');
     togglebg('donation-btn', 'history-btn')
 })
