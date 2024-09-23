@@ -107,3 +107,15 @@ document.getElementById('quota-btn').addEventListener('click', function () {
         return alert('invalid Input')
     }
 })
+
+//history button
+document.getElementById('history-btn').addEventListener('click', function () {
+    toggle('history-container');
+    togglebg('history-btn', 'donation-btn')
+})
+
+//donate button
+document.getElementById('donation-btn').addEventListener('click', function () {
+    toggle('donate-section');
+    togglebg('donation-btn', 'history-btn')
+})
