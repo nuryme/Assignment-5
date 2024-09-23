@@ -8,7 +8,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function () {
     if (noakhaliInput > total) {
         return alert('You do not have enough money');
     }
-    else if (!isNaN(noakhaliInput) || noakhaliInput > 0) {
+    else if (!isNaN(noakhaliInput) && noakhaliInput > 0) {
 
         noakhaliTotal += noakhaliInput;
         noakhaliDonation.innerText = noakhaliTotal;
@@ -45,7 +45,7 @@ document.getElementById('feni-btn').addEventListener('click', function () {
     if (feniInput > total) {
         return alert('You do not have enough money');
     }
-    else if (!isNaN(feniInput) || feniInput > 0) {
+    else if (!isNaN(feniInput) && feniInput > 0) {
         feniTotal += feniInput;
         feniDonation.innerText = feniTotal;
         remaining = remaining - feniInput;
@@ -81,7 +81,7 @@ document.getElementById('quota-btn').addEventListener('click', function () {
     if (quotaInput > total) {
         return alert('You do not have enough money');
     }
-    else if (!isNaN(quotaInput) || quotaInput > 0) {
+    else if (!isNaN(quotaInput) && quotaInput > 0) {
         quotaTotal += quotaInput;
         quotaDonation.innerText = quotaTotal;
         remaining = remaining - quotaInput;
@@ -106,16 +106,4 @@ document.getElementById('quota-btn').addEventListener('click', function () {
     else {
         return alert('invalid Input')
     }
-})
-
-//history button
-document.getElementById('history-btn').addEventListener('click', function () {
-    toggle('history-container');
-    togglebg('history-btn', 'donation-btn')
-})
-
-//donate button
-document.getElementById('donation-btn').addEventListener('click', function () {
-    toggle('donate-section');
-    togglebg('donation-btn', 'history-btn')
 })
